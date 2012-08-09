@@ -11,9 +11,13 @@
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="connection.url">jdbc:mysql://localhost:3306/base</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">hjb891218</property>
+        <property name="connection.password">123456</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
-    
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        
+      <mapping class="info.goldbo.base.entity.Admin" />
     </session-factory>
+    
 
 </hibernate-configuration>
