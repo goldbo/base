@@ -2,6 +2,7 @@ package info.goldbo.base.entity;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 /**
  * 实体类-管理员
@@ -30,84 +31,96 @@ public class Admin extends BaseEntity {
 	private Date loginDate;// 最后登录日期
 	private String loginIp;// 最后登录IP
 	
+	
 	public String getUsername() {
 		return username;
 	}
 	public void setUsername(String username) {
 		this.username = username;
 	}
+	
 	public String getPassword() {
 		return password;
 	}
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
 	public String getEmail() {
 		return email;
 	}
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
+	
 	public String getDepartment() {
 		return department;
 	}
 	public void setDepartment(String department) {
 		this.department = department;
 	}
+	
 	public Boolean getIsAccountEnabled() {
 		return isAccountEnabled;
 	}
 	public void setIsAccountEnabled(Boolean isAccountEnabled) {
 		this.isAccountEnabled = isAccountEnabled;
 	}
+	
 	public Boolean getIsAccountLocked() {
 		return isAccountLocked;
 	}
 	public void setIsAccountLocked(Boolean isAccountLocked) {
 		this.isAccountLocked = isAccountLocked;
 	}
+	
 	public Boolean getIsAccountExpired() {
 		return isAccountExpired;
 	}
 	public void setIsAccountExpired(Boolean isAccountExpired) {
 		this.isAccountExpired = isAccountExpired;
 	}
+	
 	public Boolean getIsCredentialsExpired() {
 		return isCredentialsExpired;
 	}
 	public void setIsCredentialsExpired(Boolean isCredentialsExpired) {
 		this.isCredentialsExpired = isCredentialsExpired;
 	}
+	
 	public Integer getLoginFailureCount() {
 		return loginFailureCount;
 	}
 	public void setLoginFailureCount(Integer loginFailureCount) {
 		this.loginFailureCount = loginFailureCount;
 	}
+	
 	public Date getLockedDate() {
 		return lockedDate;
 	}
 	public void setLockedDate(Date lockedDate) {
 		this.lockedDate = lockedDate;
 	}
+	
 	public Date getLoginDate() {
 		return loginDate;
 	}
 	public void setLoginDate(Date loginDate) {
 		this.loginDate = loginDate;
 	}
+	
 	public String getLoginIp() {
 		return loginIp;
 	}
 	public void setLoginIp(String loginIp) {
 		this.loginIp = loginIp;
 	}
-	
 	
 }
